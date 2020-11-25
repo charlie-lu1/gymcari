@@ -18,7 +18,51 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+  background-color: #f1ddf3;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.input-group{
+  display: flex;
+  
+}
+
+#outlined-basic{
+  background-color: #f1ddf3;
+}
+
+.inputs{
+  display: flex;
+  flex-direction: column;
+  border: solid grey 1px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+}
+.output-group{
+  border: solid grey 1px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.input{
+  margin: 10px;
+}
+
 article,
 aside,
 details,
